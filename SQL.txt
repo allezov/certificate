@@ -1,0 +1,55 @@
+create table dept (
+  dept_id int Primary key,
+  dname varchar (20));
+  
+  create table emp (
+  emp_id integer,
+  dept_id integer (20),
+  ename varchar(15),
+  salary numeric(6,2));
+  
+  alter table emp
+  add CONSTRAINT dept_fk_emp
+  foreign key dept_id
+  REFERENCES dept(dept_id)
+  
+  insert into dept values(1, "Marketing"),(2, "RD");
+  insert into emp values(1, 1, "James", 1000),(2, 2, "Smith", 2000);
+  
+  CREATE TABLE person
+ (
+ 	 person_code varchar(3),
+     first_name varchar(15),
+     last_name varchar(20),
+     hiredate date
+     
+     
+ );
+ CREATE TABLE purcchase ( product_name varchar(25), salesperson varchar(3), purchase_date date, quantity numeric(4,2) )
+ ALTER TABLE purchase add FOREIGN KEY(product_name) REFERENCES product (product_name)
+ 
+   CREATE TABLE purchase_archive
+ (
+ 	 product_name varchar(25),
+     salesperson varchar(3),
+     purchase_date date,
+     quantity numeric(4,2)
+  
+ );
+ CREATE TABLE old_item ( item_id char(20), item_dec char(25) )
+ 
+ 
+ INSERT into person
+VALUES (
+'CA', 'Charlene',	 'Atlas', 		'2010-02-01',
+'DS',	'Dany',		 'Smith',		 '2002-02-15',
+'GA',	'Gary',	 	'Anderson',		'2010-02-15',
+'JS',	'John',		'Smith',		'2002-02-15',
+'LB',	'Laren',	'Baxter',		'2010-03-01'
+)
+
+SELECT * FROM `purchase` WHERE 1
+
+
+ INSERT into purchase VALUES ('CA', 'Charlene','2010-02-01',1.00);
+ 
