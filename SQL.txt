@@ -52,4 +52,5 @@ SELECT * FROM `purchase` WHERE 1
 
 
  INSERT into purchase VALUES ('CA', 'Charlene','2010-02-01',1.00);
+ abra kadabra
  
